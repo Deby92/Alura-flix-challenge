@@ -86,7 +86,7 @@ const EditVideoModal = ({ video, onClose, setVideos }) => {
           <Label>
             Video:
             <Input
-              name="video"
+              name="video" 
               value={formData.video}
               onChange={handleChange}
             />

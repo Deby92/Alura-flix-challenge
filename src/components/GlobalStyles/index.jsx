@@ -85,6 +85,7 @@ const GlobalStyles = createGlobalStyle`
   [type="reset"],
   [type="submit"] {
     -webkit-appearance: button;
+    appearance: button;
   }
   button::-moz-focus-inner,
   [type="button"]::-moz-focus-inner,
@@ -127,6 +128,7 @@ const GlobalStyles = createGlobalStyle`
   }
   [type="search"] {
     -webkit-appearance: textfield; 
+    appearance: textfield; 
     outline-offset: -2px; 
   }
   [type="search"]::-webkit-search-decoration {
