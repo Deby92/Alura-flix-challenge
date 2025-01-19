@@ -8,8 +8,9 @@ const HeaderContainer = styled.header`
   background-color: #000;
   padding: 0px 20px;
   height: 125px;
-  border-bottom: 3px solid #5b5d61;
-  box-shadow: 0 0 25px rgba(90, 146, 201, 0.8);
+  border-bottom: 2px solid #5b5d61;
+
+  box-shadow: rgba(140, 90, 201, 0.8) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 `;
 
 const Logo = styled.img`
@@ -23,13 +24,15 @@ const ButtonsContainer = styled.div`
 
 const StyledButton = styled.button`
   padding: 10px 35px;
-  border: ${({ $primary }) => ($primary ? '3px solid #43658e' : '3px solid #fff')};
+  border: ${({ $primary }) => ($primary ? '2px solid #7c7f82' : '3px solid #fff')};
   background-color: ${({ $primary }) => ($primary ? '#000' : 'transparent')};
-  color: ${({ $primary }) => ($primary ? '#2d6dba' : '#a9a1a1')};
-  border-radius: 8px;
+  color: ${({ $primary }) => ($primary ? '#7d22d1' : '#a9a1a1')};
+  border-radius: 45px;
   cursor: pointer;
-  font-weight: bold;
-  box-shadow: ${({ $primary }) => ($primary ? 'inset 0 0 15px rgba(30, 144, 255, 0.8)' : 'none')};
+  transition: all 0.6s;
+  font-size: 1.2em;
+  font-weight: 520;
+  box-shadow: ${({ $primary }) => ($primary ? 'inset 0 0 15px rgba(209, 228, 248, 0.8)' : 'none')};
 
   &:hover {
     background-color: ${({ $primary }) => ($primary ? '#333' : '#a9a1a1')};

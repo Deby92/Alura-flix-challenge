@@ -163,13 +163,13 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  color: #fff;
+  color: #e6dfdf;
   font-size: 3.75rem;
   text-align: center;
 `;
 
 const Subtitle = styled.p`
-  color: #fff;
+  color: #e6dfdf;
   font-size: 1.25rem;
   text-align: center;
   margin-bottom: 20px;
@@ -182,7 +182,7 @@ const Form = styled.form`
 `;
 
 const SectionTitle = styled.h2`
-  color: #fff;
+  color: #e6dfdf;
   font-size: 2.25rem;
   border-top: 2px solid rgba(165, 165, 165, 0.1);
   border-bottom: 2px solid rgba(165, 165, 165, 0.1);
@@ -205,14 +205,14 @@ const FormGroup = styled.div`
 `;
 
 const Label = styled.label`
-  color: #fff;
+  color: #e6dfdf;
   font-size: 1.25rem;
   margin-bottom: 10px;
 `;
 
 const Input = styled.input`
   background: transparent;
-  color: #fff;
+  color: #e6dfdf;
   border: 2px solid #444;
   border-radius: 5px;
   padding: 10px;
@@ -238,7 +238,7 @@ const Select = styled.select`
   font-size: 1rem;
 
   &:focus {
-    border-color: #1e90ff;
+    border-color: #2e81d3;
     outline: none;
   }
 `;
@@ -273,35 +273,38 @@ const ButtonGroup = styled.div`
 `;
 
 const SubmitButton = styled.button`
-  background: #000;
-  border: 3px solid #2271d1;
-  border-radius: 8px;
-  color: #2271d1;
-  padding: 10px 35px;
-  font-size: 1.25rem;
+  width: 150px;
+  height: 60px;
+  border: 3px solid #2a2828;
+  color:#e6dfdf;
+  border-radius: 45px;
+  transition: all 0.3s;
   cursor: pointer;
-  font-weight: bold;
-  box-shadow: inset 0 0 15px rgba(30, 144, 255, 0.8);
-  transition: transform 0.3s ease;
-
+  background: #242323;
+  font-size: 1.2em;
+  font-weight: 550;
   &:hover {
-    transform: scale(1.05);
+    background: #d4984e;
+    color: white;
+    font-size: 1.5em;
   }
 `;
 
 const ClearButton = styled.button`
   background: transparent;
-  border: 3px solid #f5f5f5;
-  color: #fff;
-  padding: 10px 35px;
-  border-radius: 8px;
-  font-size: 1.25rem;
+  width: 150px;
+  height: 60px;
+  border-radius: 45px;
+  transition: all 0.3s;
   cursor: pointer;
-  font-weight: bold;
-  transition: transform 0.3s ease;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 550;
 
   &:hover {
-    transform: scale(1.05);
+    background: #315cfd;
+    color: white;
+    font-size: 1.5em;
   }
 `;
 
