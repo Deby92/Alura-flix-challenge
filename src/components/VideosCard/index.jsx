@@ -35,8 +35,8 @@ const VideoCard = ({ video, borderColor, onEdit, onDelete }) => {
 
 const Card = styled.div`
   background-color: #333;
-  color: #fff;
-  border: 5px solid ${(props) => props.borderColor || '#fff'};
+  color: #a9a1a1;
+  border: 5px solid ${(props) => props.borderColor || '#a9a1a1'};
   border-radius: 15px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   width: 430px;
@@ -44,7 +44,7 @@ const Card = styled.div`
 
 const VideoWrapper = styled.div`
   position: relative;
-  border-bottom: 5px solid ${(props) => props.borderColor || '#fff'};
+  border-bottom: 5px solid ${(props) => props.borderColor || '#a9a1a1'};
 `;
 
 const YouTubePlayer = styled.iframe`
@@ -56,7 +56,7 @@ const YouTubePlayer = styled.iframe`
 
 const ButtonGroup = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
   background-color: #000;
   padding: 10px;
@@ -70,7 +70,7 @@ const ActionButton = styled.button`
   font-family: 'Roboto', serif;
   font-weight: 900;
   font-size: 1rem;
-  color: #fff;
+  color: #a9a1a1;
   padding: 5px 10px;
   border: none;
   border-radius: 5px;

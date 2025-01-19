@@ -8,8 +8,8 @@ const HeaderContainer = styled.header`
   background-color: #000;
   padding: 0px 20px;
   height: 125px;
-  border-bottom: 3px solid #2271D1;
-  box-shadow: 0 0 25px rgba(30, 144, 255, 0.8);
+  border-bottom: 3px solid #5b5d61;
+  box-shadow: 0 0 25px rgba(90, 146, 201, 0.8);
 `;
 
 const Logo = styled.img`
@@ -23,17 +23,17 @@ const ButtonsContainer = styled.div`
 
 const StyledButton = styled.button`
   padding: 10px 35px;
-  border: ${({ $primary }) => ($primary ? '3px solid #2271D1' : '3px solid #fff')};
+  border: ${({ $primary }) => ($primary ? '3px solid #43658e' : '3px solid #fff')};
   background-color: ${({ $primary }) => ($primary ? '#000' : 'transparent')};
-  color: ${({ $primary }) => ($primary ? '#2271D1' : '#fff')};
+  color: ${({ $primary }) => ($primary ? '#2d6dba' : '#a9a1a1')};
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
   box-shadow: ${({ $primary }) => ($primary ? 'inset 0 0 15px rgba(30, 144, 255, 0.8)' : 'none')};
 
   &:hover {
-    background-color: ${({ $primary }) => ($primary ? '#333' : '#fff')};
-    color: ${({ $primary }) => ($primary ? '#fff' : '#000')};
+    background-color: ${({ $primary }) => ($primary ? '#333' : '#a9a1a1')};
+    color: ${({ $primary }) => ($primary ? '#a9a1a1' : '#000')};
   }
 `;
 

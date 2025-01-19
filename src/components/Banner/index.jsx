@@ -77,11 +77,11 @@ const Banner = () => {
 const getCategoryColor = (category) => {
   switch (category) {
     case 'FRONT END':
-      return '#6BD1FF';
+      return '#7c6bff';
     case 'BACK END':
-      return '#00C86F';
+      return '#c87b00';
     case 'INNOVACIÓN Y GESTIÓN':
-      return '#FFBA05';
+      return '#24ae36';
     default:
       return '#555';
   }
@@ -96,7 +96,7 @@ const BannerContainer = styled.figure`
   padding: 20px 0px;
   margin: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  color: #fff;
+  color: #e6dfdf;
   height: 80vh;
   position: relative;
   overflow: hidden;
@@ -125,24 +125,24 @@ const TextContainer = styled.div`
 
 const Category = styled.div`
   background-color: ${(props) => getCategoryColor(props.category)};
-  color: #fff;
+  color: #e6dfdf;
   padding: 10px 20px;
-  font-weight: 900;
-  font-size: 3rem;
+  font-weight: 700;
+  font-size: 2rem;
   border-radius: 10px;
   display: inline-block;
   margin-bottom: 20px;
 `;
 
 const Title = styled.h1`
-  font-size: 2.875rem;
+  font-size: 3rem;
   font-weight: 400;
   margin-bottom: 10px;
 `;
 
 const Description = styled.p`
-  font-size: 1.125rem;
-  font-weight: 300;
+  font-size: 1rem;
+  font-weight: 400;
 `;
 
 const ImageContainer = styled.div`

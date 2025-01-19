@@ -69,12 +69,12 @@ const NuevoVideo = () => {
     <>
       <Main>
         <Container>
-          <Title>NUEVO VIDEO</Title>
+          <Title>Crear nuevo video</Title>
           <Subtitle>
-            COMPLETE EL FORMULARIO PARA CREAR UNA NUEVA TARJETA DE VIDEO
+            Completa toda la información necesaria para agregar un video nuevo
           </Subtitle>
           <Form>
-            <SectionTitle>Crear Tarjeta</SectionTitle>
+            <SectionTitle>Agregar informacion solicitada:</SectionTitle>
             <FormRow>
               <FormGroup>
                 <Label htmlFor="titulo">Título</Label>
@@ -83,11 +83,11 @@ const NuevoVideo = () => {
                   name="titulo"
                   value={formData.titulo}
                   onChange={handleInputChange}
-                  placeholder="ingrese el título"
+                  placeholder="Titulo del video"
                 />
               </FormGroup>
               <FormGroup>
-                <Label htmlFor="categoria">Categoría</Label>
+                <Label htmlFor="Selecciona una categoría">Categoría</Label>
                 <Select
                   id="categoria"
                   name="categoria"
@@ -95,7 +95,7 @@ const NuevoVideo = () => {
                   onChange={handleInputChange}
                 >
                   <option value="" disabled>
-                    seleccione una categoría
+                    Selecciona una categoría
                   </option>
                   <option value="FRONT END">FRONT END</option>
                   <option value="BACK END">BACK END</option>
@@ -113,7 +113,7 @@ const NuevoVideo = () => {
                   name="imagen"
                   value={formData.imagen}
                   onChange={handleInputChange}
-                  placeholder="ingrese el enlace de la imagen"
+                  placeholder="Agregar URL de imagen"
                 />
               </FormGroup>
               <FormGroup>
@@ -123,7 +123,7 @@ const NuevoVideo = () => {
                   name="video"
                   value={formData.video}
                   onChange={handleInputChange}
-                  placeholder="ingrese el enlace del video"
+                  placeholder="Agregar URL del video"
                 />
               </FormGroup>
             </FormRow>
@@ -134,7 +134,7 @@ const NuevoVideo = () => {
                 name="descripcion"
                 value={formData.descripcion}
                 onChange={handleInputChange}
-                placeholder="¿de qué se trata este video?"
+                placeholder="Escribe acerca del video"
               />
             </FormGroup>
             <ButtonGroup>

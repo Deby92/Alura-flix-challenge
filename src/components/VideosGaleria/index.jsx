@@ -15,9 +15,9 @@ const VideoGallery = () => {
   }, []);
 
   const categories = {
-    'FRONT END': '#6BD1FF',
-    'BACK END': '#00C86F',
-    'INNOVACIÓN Y GESTIÓN': '#FFBA05',
+    'FRONT END': '#7c6bff',
+    'BACK END': '#c87b00',
+    'INNOVACIÓN Y GESTIÓN': '#24ae36',
   };
 
   const categorizedVideos = videos.reduce((acc, video) => {
@@ -98,7 +98,7 @@ const CategorySection = styled.section`
 
 const CategoryTitle = styled.h2`
   background-color: ${(props) => props.color};
-  color: #fff;
+  color: #e6dfdf;
   padding: 10px;
   border-radius: 10px;
   font-size: 2rem;
